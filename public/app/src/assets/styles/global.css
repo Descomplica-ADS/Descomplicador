@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fade-enter {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fade-enter-active {
+    opacity: 1;
+}
+
+.fade-exit {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fade-exit-active {
+    opacity: 0;
+}

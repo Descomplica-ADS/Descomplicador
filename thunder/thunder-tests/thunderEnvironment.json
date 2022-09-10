@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "62d8ce8e-55a7-422a-a4fe-7fc60b4ef29f",
+    "name": "DescomplicadorEnvironment",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2021-07-12T23:20:46.672Z",
+    "modified": "2022-09-10T16:03:08.260Z",
+    "data": [
+      {
+        "name": "base_url_dev",
+        "value": "http://localhost:5000"
+      }
+    ]
+  }
+]

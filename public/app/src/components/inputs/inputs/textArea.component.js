@@ -1,0 +1,18 @@
+import styled from "styled-components";
+
+export const TextArea = styled.textarea`
+  background-color: ${(props) => props.theme.secondary};
+  color: ${(props) => props.theme.text};
+  font-size: 20pt;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  &:placeholder-shown {
+    font-style: italic;
+  }
+  width: 100%;
+  box-shadow: inset 0px 0px 10px ${props => props.theme.mode === "dark" ? "black" : "#555555"};
+  font-family: Poppins;
+`;

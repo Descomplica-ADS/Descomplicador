@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "history",
+    "colName": "history",
+    "created": "2021-07-12T23:20:43.247Z",
+    "sortNum": 0,
+    "folders": []
+  },
+  {
+    "_id": "f6d2cad0-9788-47c9-957e-6196afc0dc12",
+    "colName": "Tasks",
+    "created": "2021-07-12T23:21:13.159Z",
+    "sortNum": 10000,
+    "folders": []
+  },
+  {
+    "_id": "f02717ab-2a2a-4de5-9584-df7b6db50d74",
+    "colName": "Users",
+    "created": "2021-07-13T00:41:50.720Z",
+    "sortNum": 20000,
+    "folders": []
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "build",
+    "rootDir": "./",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@config/*": ["./src/config/*"],
+      "@database/*": ["./src/infrastructure/database/*"],
+      "@app/*": ["./src/*"],
+      "@user/*": ["./src/modules/user/*"],
+      "@task/*": ["./src/modules/task/*"]
+    },
+    "typeRoots": ["./src/declarations", "./node_modules/@types"],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true
+  },
+  "exclude": ["src/__tests__"]
+}

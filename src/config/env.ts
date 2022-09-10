@@ -1,0 +1,9 @@
+import {PORT_ENV} from './server';
+import {DATABASE_URI_ENV, DATABASE_SESSIONS_COLLECTION_ENV} from './mongo';
+
+export const PORT = String(PORT_ENV);
+
+export const MONGO = {
+  DATABASE_URI: String(DATABASE_URI_ENV),
+  DATABASE_SESSIONS_COLLECTION: String(DATABASE_SESSIONS_COLLECTION_ENV),
+};

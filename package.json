@@ -1,0 +1,80 @@
+{
+  "name": "descomplicador",
+  "version": "2104.1.0",
+  "main": "src/server.js",
+  "author": "Hugo B. S. Benedicto",
+  "private": true,
+  "scripts": {
+    "build": "npx tsc && npm run fix-paths",
+    "start": "node build/src/server.js",
+    "start:dev": "nodemon --legacy-watch src/server.ts",
+    "postinstall": "npx tsc",
+    "fix-paths": "npx tspath -f",
+    "lint": "eslint src --ext .ts"
+  },
+  "engines": {
+    "node": "16.14.2"
+  },
+  "keywords": [
+    "descomplicador",
+    "descomplicator",
+    "descomplica"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "12.0.1",
+    "@commitlint/config-conventional": "12.0.1",
+    "@types/connect-mongodb-session": "2.4.0",
+    "@types/cookie-parser": "1.4.2",
+    "@types/cors": "2.8.10",
+    "@types/dotenv": "8.2.0",
+    "@types/express": "4.17.9",
+    "@types/file-type": "^10.9.1",
+    "@types/joi": "14.3.4",
+    "@types/mongodb": "3.6.11",
+    "@types/mongoose": "5.10.4",
+    "@types/multer": "^1.4.7",
+    "@typescript-eslint/eslint-plugin": "4.15.2",
+    "@typescript-eslint/parser": "4.15.2",
+    "babel-eslint": "10.1.0",
+    "commitlint": "12.0.1",
+    "eslint": "7.21.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "husky": "4.3.7",
+    "nodemon": "2.0.7",
+    "prettier": "2.2.1",
+    "ts-node-dev": "1.1.1",
+    "tsconfig-paths": "3.9.0",
+    "tspath": "1.3.7",
+    "typescript": "4.1.3"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "connect-mongodb-session": "2.4.1",
+    "cookie-parser": "1.4.5",
+    "cors": "2.8.5",
+    "date-fns": "2.22.1",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "express-session": "1.17.1",
+    "file-type": "^16.5.2",
+    "joi": "17.4.0",
+    "mongoose": "5.12.3",
+    "multer": "^1.4.2",
+    "reflect-metadata": "0.1.13",
+    "typedi": "0.10.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
